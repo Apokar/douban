@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}首页{% endblock %}
+
+{% block page_content %}
+<h1>这里是首页， 1233456789 ！</h1>
+
+<p>{{ moment(current_time).format('LLL') }}</p>
+<p>{{ moment(current_time).fromNow(refresh=True) }}</p>
+<p><a href="douban">豆瓣-蝙蝠侠-搜索结果-前4页</a></p>
+{% endblock %}

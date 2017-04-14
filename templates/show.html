@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}首页{% endblock %}
+
+{% block page_content %}
+<h1>这里是Batman 的书籍， 1233456789 ！</h1>
+<table class="table table-bordered" style="table-layout: fixed;">
+    <tbody>
+    {% for item in data %}
+        <tr>
+            <td class="col-md-2">{{ item['title'] }}</td>
+            <td class="col-md-2">{{ item['info'] }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
